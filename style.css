@@ -37,7 +37,7 @@ body {
 	text-transform: uppercase;
     text-decoration: none;
     color: #121212;
-    transition: color 0.9s;
+    transition: font-style color 0.9s;
 }
 
 .socialMedia:hover {
