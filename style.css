@@ -1,0 +1,138 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	color: #121212;
+    background-image: url("images/bg.png");
+    background-size: contain;
+}
+.content {
+	height: 300px;
+	position: relative;
+	display: flex;
+    flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.content__socials {
+    width: 100%;
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 10000;
+}
+
+.socialMedia {
+    font-family: basic-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2em;
+	text-transform: uppercase;
+    text-decoration: none;
+    color: #121212;
+    transition: color 0.9s;
+}
+
+.socialMedia:hover {
+    color: red;
+    font-family: basic-sans, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.content__img {
+	max-width: 300px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.content__text {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    z-index: 10000;
+}
+
+.content__text__title {
+    margin-block-start: 0em;
+    margin-block-end: 0.1em;
+
+    font-family: basic-sans, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+	text-transform: uppercase;
+    text-align: center;
+    line-height: 0.8;
+	font-size: 8em;
+}
+
+.content__text__presentation{
+    font-family: ellograph-cf, monospace;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+	font-size: 1.8em;
+    letter-spacing: -2px;
+}
+
+.content__footer {
+    width: 100%;
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+.content__footer__text {
+    font-family: basic-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+	text-transform: uppercase;
+    font-size: 1em;
+    line-height: 1;
+    color: #121212;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #FBFBFB;
+    color: #121212;
+    font-family: basic-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+
+    border-width: 2px;
+    border-radius: 16px;
+    border-style: outset;
+    border-color: #8261f6;
+}
+
+button:hover {
+    background-color: #8261f6;
+    color: #121212 ;
+  }
+
+@media screen and (min-width: 50em) {
+	body {
+		overflow: hidden;
+	}
+	.content {
+		height: 100vh;
+        flex-direction: column;
+        justify-content: space-between;
+		overflow: hidden;
+	}
+}
