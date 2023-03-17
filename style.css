@@ -37,14 +37,12 @@ body {
 	text-transform: uppercase;
     text-decoration: none;
     color: #121212;
-    transition: font-style color 0.9s;
+    transition: color 0.9s;
 }
 
 .socialMedia:hover {
     color: red;
-    font-family: basic-sans, sans-serif;
-    font-weight: 700;
-    font-style: italic;
+
 }
 
 .content__img {
@@ -104,26 +102,28 @@ body {
     color: #121212;
 }
 
-button {
+a.content__footer__mail {
     padding: 8px 16px;
-    background-color: #FBFBFB;
-    color: #121212;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #121212;
+
+    background-color: none;
+    color:#121212;
+
     font-family: basic-sans, sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.2em;
-    transition: background-color 0.3s;
+    text-decoration: none;
 
-    border-width: 2px;
-    border-radius: 16px;
-    border-style: outset;
-    border-color: #8261f6;
+    transition: 0.9s;
 }
 
-button:hover {
-    background-color: #8261f6;
-    color: #121212 ;
-  }
+a.content__footer__mail:hover {
+    background-color: #121212;
+    color: #ffffff;
+}
 
 @media screen and (min-width: 50em) {
 	body {
