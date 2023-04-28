@@ -7,8 +7,8 @@ html, body {
 }
 
 body {
-	color: #121212;
-    background-image: url("images/bg.png");
+	color: #F6CFFB;
+    background-color: #150217;
     background-size: contain;
 }
 .content {
@@ -30,18 +30,16 @@ body {
 }
 
 .socialMedia {
-    font-family: basic-sans, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 1.2em;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.4vh;
 	text-transform: uppercase;
     text-decoration: none;
-    color: #121212;
-    transition: color 0.9s;
+    color: #F6CFFB;
+    transition: color 0.4s;
 }
 
 .socialMedia:hover {
-    color: red;
+    color: #B859F3;
 
 }
 
@@ -61,16 +59,10 @@ body {
 }
 
 .content__text__title {
-    margin-block-start: 0em;
-    margin-block-end: 0.1em;
-
-    font-family: basic-sans, sans-serif;
-    font-weight: 700;
-    font-style: normal;
+    font-family: 'Press Start 2P', cursive;
 	text-transform: uppercase;
     text-align: center;
-    line-height: 0.8;
-	font-size: 8em;
+	font-size: 12vh;
 }
 
 .content__text__presentation{
@@ -78,7 +70,7 @@ body {
     font-weight: 300;
     font-style: normal;
     text-align: center;
-	font-size: 1.8em;
+	font-size: 2.8vh;
     letter-spacing: -2px;
 }
 
@@ -99,30 +91,29 @@ body {
 	text-transform: uppercase;
     font-size: 1em;
     line-height: 1;
-    color: #121212;
+    color: #F6CFFB;
 }
 
 a.content__footer__mail {
-    padding: 8px 16px;
+    padding: 16px 16px;
     border-style: solid;
-    border-width: 1px;
-    border-color: #121212;
+    border-width: 4px;
+    border-color: #E361F1;
 
-    background-color: none;
-    color:#121212;
+    background-color: #F6CFFB;
+    color: #E361F1;
 
-    font-family: basic-sans, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.2em;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.4vh;
+	text-transform: uppercase;
     text-decoration: none;
 
-    transition: 0.9s;
+    transition: 0.4s;
 }
 
 a.content__footer__mail:hover {
-    background-color: #121212;
-    color: #ffffff;
+    background-color: #E361F1;
+    color: #F6CFFB;
 }
 
 @media screen and (min-width: 50em) {
