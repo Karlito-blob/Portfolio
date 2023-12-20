@@ -1,16 +1,55 @@
+@font-face {
+    font-family: 'nohemiregular';
+    src: url('font/nohemi-regular-webfont.woff2') format('woff2'),
+         url('font/nohemi-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pp_pangealight';
+    src: url('font/pppangea-light-webfont.woff2') format('woff2'),
+         url('font/pppangea-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
 	box-sizing: border-box;
 }
 
 html, body {
-	height: 100%;
+	height: 100vh;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-	color: #F6CFFB;
-    background-color: #150217;
-    background-size: contain;
+	color: #2B4FCD;
+    background-color: #FFFFFF;
 }
+
+h1 {
+    font-family: 'pp_pangealight';
+	text-transform: uppercase;
+    text-align: center;
+    font-weight: normal;
+    font-style: normal;
+	font-size: 96px;
+}
+
+p {
+    font-family: 'nohemiregular';
+    font-size: 16px;
+	text-transform: uppercase;
+}
+
+a {
+    font-family: 'nohemiregular';
+    font-size: 16px;
+	text-transform: uppercase;
+}
+
 .content {
 	height: 300px;
 	position: relative;
@@ -20,63 +59,27 @@ body {
 	align-items: center;
 }
 
-.content__socials {
+.header {
     width: 100%;
-    padding: 16px 24px;
+    padding: 20px 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     z-index: 10000;
 }
 
-.socialMedia {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 1.4vh;
-	text-transform: uppercase;
-    text-decoration: none;
-    color: #F6CFFB;
-    transition: color 0.4s;
-}
-
-.socialMedia:hover {
-    color: #B859F3;
-
-}
-
 .content__img {
-	max-width: 300px;
+	max-width: 128px;
 	position: absolute;
 	top: 0;
 	left: 0;
 	opacity: 0;
 }
 
-.content__text {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    z-index: 10000;
-}
 
-.content__text__title {
-    font-family: 'Press Start 2P', cursive;
-	text-transform: uppercase;
-    text-align: center;
-	font-size: 12vh;
-}
-
-.content__text__presentation{
-    font-family: ellograph-cf, monospace;
-    font-weight: 300;
-    font-style: normal;
-    text-align: center;
-	font-size: 2.8vh;
-    letter-spacing: -2px;
-}
-
-.content__footer {
+footer {
     width: 100%;
-    padding: 16px 24px;
+    padding: 20px 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -84,36 +87,8 @@ body {
     z-index: 10000;
 }
 
-.content__footer__text {
-    font-family: basic-sans, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-	text-transform: uppercase;
-    font-size: 1em;
-    line-height: 1;
-    color: #F6CFFB;
-}
-
-a.content__footer__mail {
-    padding: 16px 16px;
-    border-style: solid;
-    border-width: 4px;
-    border-color: #E361F1;
-
-    background-color: #F6CFFB;
-    color: #E361F1;
-
-    font-family: 'Press Start 2P', cursive;
-    font-size: 1.4vh;
-	text-transform: uppercase;
-    text-decoration: none;
-
-    transition: 0.4s;
-}
-
-a.content__footer__mail:hover {
-    background-color: #E361F1;
-    color: #F6CFFB;
+.footerText {
+    font-size: 14px;
 }
 
 @media screen and (min-width: 50em) {
